@@ -5,15 +5,13 @@ if __name__ == '__main__':
     lexer = SifraLexer()
     parser = SifraParser()
 
-    comando = 'DESCRYPTO CRYPTO mensagem USING chave USING chave'
+    print('Digite comandos para serem analisados. Digite "exit" para sair.')
 
-    print('Comando:', comando)
+    while True:
+        comando = input('Comando: ')
+        if comando.strip().lower() == 'exit':
+            print('Encerrando o analisador.')
+            break
 
-    for tok in lexer.tokenize(comando):
-        print('type=%r, value=%r' % (tok.type, tok.value))
-
-   
-    result = parser.parse(lexer.tokenize(comando))
-    print('Resultado:', result)
-    
-    
+        result = parser.parse(lexer.tokenize(comando))
+        print('Resultado:', result)

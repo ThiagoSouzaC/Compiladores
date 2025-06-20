@@ -6,14 +6,15 @@ class SifraLexer(Lexer):
 
     ignore = ' \t'
 
-    # ------------------------------------------
-    # Definição dos tokes 
-    # ------------------------------------------
+    """
+    Definição dos tokes 
+    """
 
-    # Palavras reservadas
+    """Palavras reservadas"""
     CRYPTO = r'CRYPTO'
     DESCRYPTO = r'DESCRYPTO'
     USING = r'USING'
 
-    # Regra para textos (mensagem e chave)
-    TEXT = r'[a-zA-Z0-9]+'   
+    """Regra para textos (mensagem e chave)"""
+    TEXT = r'\".*?\"'
+
