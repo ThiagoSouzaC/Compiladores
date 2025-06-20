@@ -1,20 +1,21 @@
 # 🔐 Compilador de Cifras com Vigenère (Usando SLY)
 
-## Trabalho de Compiladores (2025.1)
+## 📈 Trabalho de Compiladores (2025.1)
 
 **Professora:** Myrna Amorim
+
 **Grupo:** Ana Clara da Costa Souza, Guilherme Felippe da Silva Boiko, Thiago Conceição de Souza, e Renan Alves Lima
 
 Este projeto implementa um compilador para comandos de **criptografia e descriptografia** usando a **cifra de Vigenère**, sensível a letras maiúsculas e minúsculas (*case sensitive*), com suporte a **frases completas** como chave e texto.
 
-## 🧠 Tecnologias usadas
+## 🛠️ Tecnologias usadas
 
 - [Python 3](https://www.python.org/)
 - [SLY (Simple Lexer & Parser)](https://sly.readthedocs.io/en/latest/index.html)
 
 ---
 
-## Léxico da Linguagem
+## 🔤 Léxico da Linguagem
 
 - Palavras-chave:
   - `CRYPTO`: cifra uma mensagem usando uma chave
@@ -36,7 +37,7 @@ C → CRYPTO | DESCRYPTO
 
 ---
 
-## Semântica da Linguagem
+## ⚙️ Semântica da Linguagem
 
 | Produções         | Ações                                         |
 | ----------        | -------------------------                     |
